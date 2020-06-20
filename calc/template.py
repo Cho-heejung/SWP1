@@ -3,18 +3,10 @@ html = b"""
     <body>
         <form method="get" action="">
             <p>
-                Sum: <input type="text" name="sum" value="%(sum)s">
+                a = <input type = "number" name = "a">
             </p>
             <p>
-                Product: <input type="text" name="product" value="%(product)s">
-            </p>
-            <p>
-                sum = <input type="number" name="a">
-                    + <input type="number" name="b">
-            </p>
-            <p>
-                product = <input type="number" name="a">
-                        * <input type="number" name="b">
+                b = <input type = "number" name = "b">
             </p>
             <p>
                 <input type="submit" value="Submit">
