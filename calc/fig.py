@@ -8,10 +8,13 @@ def application(environ, start_response):
     b = d.get('b', [''])[0]
     sum = d.get('sum', [''])[0]
     product = d.get('product', [''])[0]
-    if '' not in [a, b]:
+    try:
         a, b = int(a), int(b)
-        sum = [a + b]
-        product = [a * b]
+        sum = a + b
+        product = a * b
+    except ValueError:
+        sum = "None"
+        product = "None"
 
     response_body = html % {
         'sum' : sum,
