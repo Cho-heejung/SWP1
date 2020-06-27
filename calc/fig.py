@@ -24,4 +24,4 @@ def application(environ, start_response):
         ('Content-Type', 'text/html'),
         ('Content-Length', str(len(response_body)))
     ])
-    return [(response_body)]
+    return [(response_body)]  
